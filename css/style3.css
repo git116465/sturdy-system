@@ -1,0 +1,160 @@
+.img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    background-image: url("../images/header2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* 调暗背景图片 */
+  .img-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  /* 中间显示的文字 */
+  .img-wrapper .title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    z-index: 1;
+  }
+  
+  /* 中间显示的诗句文字 */
+  .img-wrapper .poetry {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    z-index: 1;
+  }
+
+  #contentArea {
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .header{
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: dimgray;
+  }
+
+.content{
+    background-image: url("../images/bg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.zhusu-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .zhusu-card {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .zhusu-card:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  .zhusu-cover {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* 视频标题样式 */
+  .zhusu-title {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* 视频描述样式 */
+  .zhusu-desc {
+    padding: 0 10px 10px;
+    font-size: 14px;
+    color: #4b4a4a;
+  }
+
+  .food-item {
+    display: flex; /* 设置为flex容器 */
+    flex-direction: row; /* 子元素水平排列 */
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease; /* 新增颜色变化过渡效果 */
+    align-items: center; /* 垂直居中对齐 */
+    background-color: transparent;
+}
+
+.food-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 悬停时添加阴影效果 */
+    color: #ad8424; /* 悬停时文字颜色改变，这里颜色可根据喜好调整 */
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 4px;
+    margin-right: 20px; /* 图片右边距 */
+}
+
+/* 为了更好的响应式布局，可以为文字添加最大宽度 */
+.food-item h2,.food-item p{
+    margin: auto; /* 调整文字简介的外边距 */
+    max-width: 60%; /* 文字简介的最大宽度 */
+    font-size:35px; 
+    font-family: STXingKai, Arial, sans-serif;
+}
+
+.food-item p {
+    text-indent: 2em; /* 首行缩进 */
+    color: #000000; /* 字体颜色 */
+    font-size: 22px; /* 字体大小 */
+    line-height: 2; /* 行距，1.6是常见的行距倍数 */
+}
+
+@keyframes imageEntrance {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.food-item img {
+    animation: imageEntrance 2s ease-in-out;
+}

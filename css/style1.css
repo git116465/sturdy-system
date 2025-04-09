@@ -1,0 +1,192 @@
+.img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 调暗背景图片 */
+.img-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* 中间显示的文字 */
+.img-wrapper .title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+/* 中间显示的诗句文字 */
+.img-wrapper .poetry {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  z-index: 1;
+}
+
+.header{
+  width: 100%;
+  background-color: transparent;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: dimgray;
+}
+#navBar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+}
+
+.nav-item {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none; 
+  color: #333; 
+}
+
+.nav-item:hover {
+  background-color: #ccc;
+}
+
+#contentArea {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.content1{
+  background-image: url('../images/bg2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content1-wrapper {
+  display: flex;
+  height: 500px; 
+}
+
+.content1-image {
+  border: none;
+}
+
+.content1-text {
+  flex: 1;
+  padding-left: 10px;
+  overflow-y: auto; 
+  line-height: 2.5; 
+}
+
+.img-header{
+  display: flex;
+  justify-content: center;
+}
+
+/* 整体容器样式 */
+.video-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* 单个视频卡片样式 */
+.video-card {
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* 视频封面图片样式（这里用纯色块代替，实际可替换为视频封面图） */
+.video-cover {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* 视频标题样式 */
+.video-title {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* 视频描述样式 */
+.video-desc {
+  padding: 0 10px 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.img-span-container {
+  display: grid;
+  place-items: center; /* 同时实现水平和垂直居中 */
+}
+
+/* 整体容器样式 */
+.image-container {
+  display:flex;
+  margin: 0 auto;
+  width: 1200px;
+  height: 600px;
+}
+
+.card {
+  width: 240px;
+  height: 600px;
+}
+
+.image1{
+  width: 240px;
+  height: 500px;
+  padding: 100px 0 0 0;
+}
+
+.image3{
+  width: 240px;
+  height: 500px;
+  padding: 100px 0 0 0;
+}
+
+.image5{
+  width: 240px;
+  height: 500px;
+  padding: 100px 0 0 0;
+}
+
+.image2{
+  width: 240px;
+  height: 500px;
+  padding: 0 0 100px 0;
+}
+
+.image4{
+  width: 240px;
+  height: 500px;
+  padding: 0 0 100px 0;
+}
